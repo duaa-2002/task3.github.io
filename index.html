@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .btn{
+            
+            background-color:white;
+            color:black;
+            padding:15px;
+         }
+        .btn:hover{
+            color: white;
+            background-color:green;
+           
+        }
+       
+        img{
+            width:120px;
+            height:160px;
+            display: inline-block;
+            position:absolute;
+            top:100px;
+            z-index:-1;
+        }
+
+        .w1{
+            background-color:red;
+            color:black;
+            padding:15px;
+         
+        }
+        .w1:hover+div{
+            color: white;
+            background-color:purple;
+            display: block;
+           
+        }
+
+            
+       
+       div{
+        display: none;
+       
+
+       }
+       
+       
+    </style>
+</head>
+<body>
+    
+    <a class="btn" href="#">This is a link</a>
+    <ul style="background-color: yellow;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+     </ul>
+     <br>
+     <h1 style="text-indent:25px;">This is a heading </h1>
+     <p style="text-indent:30px;">Because the image has a z-index of -1,it will be placed behind the text.</p>
+     <img src="hi.jpg">
+     <br><br><br>
+
+     <a class="w1" href="#">DropDown</a>
+    <div id="qq">
+        <p>Link 1</p>
+        <p>Link 2</p>
+        <p>Link 3</p>
+    </div>
+
+    </body>
+</html>
